@@ -1,6 +1,6 @@
 /* 表单组件 */
 <template>
-  <div class="formView" style="border-bottom:20px solid #f8f9fa;">
+  <div class="formView">
     <slot name="header" />
     <el-form
       v-if="$route.name !== 'HotelManageView' && dataOperationtype !== 2"
@@ -388,7 +388,7 @@ export default {
     },
     // 通过省份/城市code查询名字
     getNameByCode(ary = []) {
-      const cityList = JSON.parse(localStorage.getItem('areaList'))
+      const cityList = []
       const res = []
       const province = cityList.find(item => {
         return item.code === ary[0]

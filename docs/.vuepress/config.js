@@ -27,8 +27,8 @@ module.exports = {
     sidebar: {
       '/baseComponents/': [
         'MyConfirm',
-        'Form',
-        'aaa'
+        'BatchUploading',
+        'Form'
       ],
       '/css/': [
         'three',

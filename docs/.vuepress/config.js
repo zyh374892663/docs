@@ -28,6 +28,7 @@ module.exports = {
       '/baseComponents/': [
         'MyConfirm',
         'BatchUploading',
+        'HeadFilter',
         'Form'
       ],
       '/css/': [

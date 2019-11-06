@@ -6,8 +6,9 @@ title: 'Form'
 ::: tip
 1.引入组件，注册组件  
 2.传递数据，及显示方式  
-`:data-setting="data"`(传递数据[**Object**])  
-`:data-operationtype="1"`(操作类型：1 新增 2 查看 3 编辑[**Number**])  
+- `:data-setting="data"`(传递数据[**Object**])  
+- `:data-operationtype="1"`(操作类型：1 新增 2 查看 3 编辑[**Number**])  
+
 3.组件会自动生成form数据对象，通过`v-model`接收([**Object**])  
 4.表单提交前校验，通过`:data-isrequired="isBaseRequired"`通知组件自动校验([**Boolean**])
 :::
@@ -189,10 +190,10 @@ dataOperationtype | 操作状态1创建 2查看 3编辑  | false
 dataBankindex     | 开户行数据回显下标        | 无
 
 #### 事件
-键                | 描述                    |  默认值   
-:----------       |:---------              |:----------
-isSubmit         | 接收校验结果，判断是否保存  | 无 
-save             | 接收保存按钮事件通讯       | 无 
+事件              | 描述                    
+:----------      |:---------              
+isSubmit         | 接收校验结果，判断是否保存  
+save             | 接收保存按钮事件通讯       
 
 #### dataSetting
 键            | 描述                    |  默认值   
@@ -203,7 +204,7 @@ value         | 回现或展示数据            | 无
 type          | input类型               | input、number、radio、region、cityMultiple、select、selectInput
 placeholder   | placeholder及校验提示信息 | 无
 validate      | 校验类型及规则            | input(默认blue) mobile(手机校验) email(邮箱校验) select(change) 
-options       | 下拉框单选多选枚举值       | 无
+options       | 下拉框、单选、多选枚举值    | 无
 isRequired    | 是否校验                 | 否
 width         | 设置输入框宽度            | 434px
 
